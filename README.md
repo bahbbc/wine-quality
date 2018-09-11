@@ -10,10 +10,12 @@ a. Como foi a definição da sua estratégia de modelagem?
 Escolhi utilizar as variáveis que tinham maior relação com a variável resposta: `quality`.
 
 Eu escolhi testar 2 abordagens:
-    - Regressão Linear,
+
+    - Regressão Linear e
+
     - Random Forests.
 
-    Para a regressão linear os atributos foram normalizados utilizando-se z-score (com a lib StandardScale). A Random Forest não necessita desse pré processamento, mas foram feitas duas estratégias, com e sem otimização de hiperparâmetros.
+Para a regressão linear os atributos foram normalizados utilizando-se z-score (com a lib StandardScale). A Random Forest não necessita desse pré processamento, mas foram feitas duas estratégias, com e sem otimização de hiperparâmetros.
 
 b. Como foi definida a função de custo utilizada?
 
@@ -31,5 +33,4 @@ O modelo foi validado utilizando-se as métricas de avaliação acima e o conjun
 e. Quais evidências você possui de que seu modelo é suficientemente bom?
 
 O modelo da Random Forest que foi treinado sem a otimização de hiperparâmetros possui a melhor média de erro e um bom desempenho para os valores intermédiarios de qualidade de vinho. O desempenho baixo para os valores 3 e 8 e 9 deve-se a quantidade de dados desses valores. Uma possível solução para esse problema seria transformar o problema em um classificador multiclasse (com valores de 3 à 9) e utilizar alguma técnica de balanceameneto de datasets (como over ou under sampling) para garantir que existirão valores para as qualidades que possuem poucos dados.
-
 
