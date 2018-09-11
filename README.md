@@ -32,5 +32,5 @@ O modelo foi validado utilizando-se as métricas de avaliação acima e o conjun
 
 e. Quais evidências você possui de que seu modelo é suficientemente bom?
 
-O modelo da Random Forest que foi treinado sem a otimização de hiperparâmetros possui a melhor média de erro e um bom desempenho para os valores intermédiarios de qualidade de vinho. O desempenho baixo para os valores 3 e 8 e 9 deve-se a quantidade de dados desses valores. Uma possível solução para esse problema seria transformar o problema em um classificador multiclasse (com valores de 3 à 9) e utilizar alguma técnica de balanceameneto de datasets (como over ou under sampling) para garantir que existirão valores para as qualidades que possuem poucos dados.
+O modelo da Random Forest que foi treinado sem a otimização de hiperparâmetros possui a melhor média de erro e um bom desempenho para os valores intermédiarios de qualidade de vinho. O desempenho baixo para os valores 3 e 8 e 9 deve-se a quantidade de dados desses valores. Uma possível solução para esse problema seria transformar o problema em um classificador multiclasse (com valores de 3 à 9) e utilizar alguma técnica de balanceameneto de datasets (como over ou under sample) para garantir que existirão valores para as qualidades que possuem poucos dados.
 
